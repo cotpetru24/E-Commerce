@@ -66,7 +66,6 @@ namespace Infrastructure.Services
             return CreateToken(user);
         }
 
-        //-----testing-------
         public Task<string> GetCurrentUsernameAsync(ClaimsPrincipal user)
         {            
             return Task.FromResult(user.Identity?.Name ?? "Unknown");
